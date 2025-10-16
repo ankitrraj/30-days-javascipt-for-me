@@ -2,14 +2,17 @@ import {users} from './MOCK_DATA.json'
 
 console.log(users);
 
- // we can also use the import statement to import the data from the json file
 
- import users from './MOCK_DATA.json'
+console.log(users.length);
 
- console.log(users);
+console.log(users[0]);
 
- // we can also use the import statement to import the data from the json file
+console.log(users[0].first_name);
 
- import users from './MOCK_DATA.json'
+console.log(users[0].last_name);
 
- console.log(users);
+console.log(users[0].email);
+
+console.log(users[0].gender);
+
+console.log(users[0].Car_model);
