@@ -1,12 +1,11 @@
 const express = require('express');
 const users = require('./MOCK_DATA.json');
-
 const app =express();
-
 const PORT = 8080;
 
 //routs
 
+ 
 app.get("/users", (req ,res)=>{
     const html =`
     <ul>
