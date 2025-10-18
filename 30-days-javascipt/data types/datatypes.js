@@ -10,8 +10,20 @@
  const anotherId = Symbol('123')
 console.log(id === anotherId);
 
-const BigNumber = 333454562546465347347523453453425364;
+const BigNumber = 333454562546465347347523453453425364n;
 console.log(typeof BigNumber); // its always represented as number 
+
+
+
+// intialized arrray
+const devlopers = ["harry " ,"hitesh", "apna college"]
+
+const AnkitObj = { // thats my obj snki
+    MyName: "Ankit ",
+    Age : 18,
+    roll :123
+}
+console.log(typeof AnkitObj);
 
 
 
