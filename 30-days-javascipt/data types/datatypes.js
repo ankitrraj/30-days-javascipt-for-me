@@ -15,7 +15,7 @@ console.log(typeof BigNumber); // its always represented as number
 
 
 
-// intialized arrray
+// non primptive array obj 
 const devlopers = ["harry " ,"hitesh", "apna college"]
 
 const AnkitObj = { // thats my obj snki
