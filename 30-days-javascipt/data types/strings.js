@@ -18,11 +18,12 @@ const mygit =new String("ankitrraj")
 console.log(mygit.length);// length of chars
 console.log(mygit.toUpperCase());// to all uppercase letter
 console.log(mygit.charAt(0));
-console.log(mygit.charAt(2));// which index has to be character
-console.log(mygit.concat(""));// concat means add somethignafter this
-console.log(mygit.endsWith("an"))// when the strings end with __
-console.log(mygit.includes("an")); // includes means the strings has to be hte letter
-log
+console.log(mygit.charAt("t"));// which index has to be character
+// console.log(mygit.concat(""));// concat means add somethignafter this
+// console.log(mygit.endsWith("an"))// when the strings end with __/
+// console.log(mygit.includes("an")); // includes means the strings has to be hte letter
+console.log(mygit.indexOf("t"));
+
 
 
 
