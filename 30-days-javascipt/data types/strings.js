@@ -1,3 +1,5 @@
+// const { log } = require("console");
+
 const name  = "Ankit";
 const MyGithubRepo = "20"
 
@@ -36,6 +38,24 @@ console.log(ankitname1.slice(-4,-2));
 const newOne = "     ankit c      "
 console.log(newOne.trimStart()); // trimstart has to remove the staring spaces
 console.log(newOne);
+
+const url = "https://newsdikhao.co.in"
+
+const url1 =url.replace('news','ankit')
+console.log(url1);
+
+console.log(url.includes("news"));
+
+
+
+
+console.log(ankitname.split("-"));
+console.log(ankitname.bold("ankit"));
+
+
+
+
+
 
 
 
