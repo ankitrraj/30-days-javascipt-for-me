@@ -24,6 +24,23 @@ console.log(mygit.charAt("t"));// which index has to be character
 // console.log(mygit.includes("an")); // includes means the strings has to be hte letter
 console.log(mygit.indexOf("t"));
 
+const ankitname = "ankit-raj"
+const ankitname1 = "ankitraj"
+
+console.log(ankitname.substring(0,7));
+console.log(ankitname1.substring(0,7));
+
+console.log(ankitname.slice(-4,-2));
+console.log(ankitname1.slice(-4,-2));
+
+const newOne = "     ankit c      "
+console.log(newOne.trimStart()); // trimstart has to remove the staring spaces
+console.log(newOne);
+
+
+
+
+
 
 
 

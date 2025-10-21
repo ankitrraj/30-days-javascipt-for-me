@@ -1,7 +1,7 @@
 import readline from "readline";// readline is used for terminal input in ts 
 import { isJSDocNameReference } from "typescript";
 
-
+ 
 //const readline = require("readline");
 
 
