@@ -32,12 +32,12 @@ console.log(balance);
 const ankit = Math.random()
 
 const choti = 10 
-const badi = 30 
+const badi = 20
 console.log(ankit);
 
 
-console.log(ankit*(badi-choti));
-
+console.log( Math.floor (ankit* (badi-choti) ) +choti );
+f
 
 
 
