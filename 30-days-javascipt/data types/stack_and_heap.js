@@ -6,7 +6,7 @@
 //  Acont = "Rohit"
 //  console.log(Cont);
 //  console.log(Acont);
- //because he givern as copy he dosent change the value in non primptive data types 
+ //because he givern as copy he dosent change the value in primptive data types 
  
 
  // now give example to non primtive 

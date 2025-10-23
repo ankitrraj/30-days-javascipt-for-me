@@ -16,4 +16,4 @@ let a =3
 let y= ++a
 console.log(`a: ${a} , y: ${y}`);
 
-// becuase of prefix it will increment the value of a and then assign it to y
+// becuase of prefix it will increment the value of a andb then assign it a to y
