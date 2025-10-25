@@ -4,13 +4,22 @@
 
 let name="Ankit"
 const ChildNAme = "ankit"
-let patanahi ;
+let patanahi ; // undefiendd
 
+let Changename = name ;
+Changename ="rphit " // he copies the values and change its not change the whole value
 
-name="ram ram"
-
-
+console.log(Changename);
 console.log(name)
+
+
+
+
+
+
+
+console.log(name);
+
 console.log(ChildNAme)
 console.table([name,ChildNAme,patanahi])
 

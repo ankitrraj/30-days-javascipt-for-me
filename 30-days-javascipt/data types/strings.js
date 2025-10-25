@@ -37,7 +37,7 @@ console.log(ankitname1.slice(-4,-2));
 
 const newOne = "     ankit c      "
 console.log(newOne.trimStart()); // trimstart has to remove the staring spaces
-console.log(newOne);
+console.log(newOne); // and the trim delete all the spaces
 
 const url = "https://newsdikhao.co.in"
 
