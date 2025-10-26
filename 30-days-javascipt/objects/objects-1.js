@@ -18,14 +18,38 @@ const myobj = {
 
 }
 
-console.log(myobj.name);
+// console.log(myobj.name);
 //and a another beat approach to get the values in the obj 
-console.log(myobj["name"]);
-console.log(myobj["email"]);
-console.log(myobj["full name"]);// and a another thing when u delcare a obj value in " " codes to iunsure the all the spaces count in the "" codes
+// console.log(myobj["name"]);
+// console.log(myobj["email"]);
+// console.log(myobj["full name"]);// and a another thing when u delcare a obj value in " " codes to iunsure the all the spaces count in the "" codes
 
-console.log(typeof myobj[mysymbol]);
-console.log(myobj[mysymbol]);
+// console.log(typeof myobj[mysymbol]);
+// console.log(myobj[mysymbol]);
+
+
+myobj.email = "ankit@google.com"
+myobj.email = "ankit@chatgpt.com"  
+
+// console.log(myobj["email"]);
+// Object.freeze(myobj);
+// myobj.email = "ankit@chatgpt.com"
+// console.log(myobj);
+// myobj.email = "ankit@chatgpt.com"  
+
+myobj.greeting = function(){
+    console.log("heloo its me");
+
+}
+console.log(myobj.greeting());
+
+myobj.greeting = function(){
+    console.log(`heloo its me , ${this["full name"]}`);
+
+}
+console.log(myobj.greeting());
+
+
 
 
 
