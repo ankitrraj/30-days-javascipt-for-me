@@ -40,18 +40,46 @@ const obj3 = {4: "F" , 5 : "E"}
 // method 1
 // the method 1 create a problem because the problem is create in the frist obj to under the second obj 
 const obj5 = {obj1,obj2,obj3}
-console.log(obj5);
+// console.log(obj5);
 
 
 // method 2
 const obj4 = Object.assign( {},obj1,obj2,obj3) // we use delcared and target with help of ( {} , targets)
-console.log(obj4);
+// console.log(obj4);
 
 // method 3 (spread method )
 
 // best approach 
 const obj6 = {...obj1 , ...obj2 , ...obj3}
-console.log(obj6);
+// console.log(obj6);
+
+const users = [
+    {
+        id : 1,
+        email : "ankitraj@gmail.com"
+    },
+    {
+        id : 2,
+        email : "ai.ankitraj@gmail.com"
+    },
+    {
+        id : 3,
+        email : "work.ankitraj@gmail.com"
+    }
+]
+// ensure he starts with 0 to get values
+// console.log( users[0].email);
+
+// console.log(users);
+
+
+
+// console.log(Object.values(ankitobj));
+// console.log(Object.keys(ankitobj));
+// console.log(Object.entries(ankitobj));
+
+console.log(ankitobj.hasOwnProperty('name'))
+
 
 
 
