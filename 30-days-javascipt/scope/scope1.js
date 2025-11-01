@@ -50,7 +50,7 @@ function addone(num){
     return num +1;
 }
 // its call the delcration of function and get 
-name(5)
+// name(5)
 const name = function addone(num){
     return num +3;
 }
