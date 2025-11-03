@@ -30,3 +30,30 @@ if (Object.keys(user2).length===0) {
     
 }
 
+// ++++++++++++++++++++++++++++++++++
+
+// bulisj coalescing operator (??)
+
+
+let val;
+// val =5??20
+
+//  val =null??49
+//  val =undefined??49
+
+// val = null??undefined
+
+val = undefined??20??21
+console.log(val);
+
+// terniary opertaor 
+// condition ?true :false 
+const aprice =200
+
+aprice == 300 ? console.log(`its ealual`) : console.log("its not eaual");
+
+
+
+
+
+
