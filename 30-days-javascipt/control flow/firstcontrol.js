@@ -50,7 +50,7 @@ console.log(val);
 // condition ?true :false 
 const aprice =200
 
-aprice == 300 ? console.log(`its ealual`) : console.log("its not eaual");
+aprice == 300 ? console.log(`its ealual`) : console.log("fits not eaual");
 
 
 
