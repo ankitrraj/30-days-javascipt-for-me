@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom creation div</title>
+     <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+<script>
+    const createDiv= document.createElement('div')
+    console.log(createDiv);
+    createDiv.className="ankit"
+    createDiv.id = Math.round(Math.random()*10)
+    createDiv.setAttribute("title","ankit is good")
+    // createDiv.innerText="ankitrraj"
+    createDiv.style.color = "green"
+
+    const addtext = document.createTextNode("ankit with chai")
+    createDiv.appendChild(addtext)
+    document.body.appendChild(createDiv)
+
+    
+</script>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom </title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="weekday">
+        <div class="day">sunday</div>
+        <div class="day">monday</div>
+        <div class="day">tuesday</div>
+        <div class="day">wednesday</div>
+        <div class="day">thrusday</div>
+        <div class="day">friday</div>
+        <div class="day">saturday</div>
+    </div>
+    
+</body>
+<script>
+    const ankit= document.querySelector(".weekday")
+    // console.log(ankit);
+    // console.log(ankit.children);
+    // console.log(ankit.children[0]);
+    // console.log(ankit.children[0].innerHTML);
+
+    for (let i = 0; i < ankit.children.length; i++) {
+        console.log(ankit.children[i].innerHTML);
+        
+    }
+
+    console.log(ankit.lastElementChild);
+    console.log(ankit.firstElementChild);
+
+    const dayone =document.querySelector('.day')
+    console.log(dayone);
+    console.log(dayone.parentElement);
+    console.log(dayone.nextElementSibling);
+    
+
+    
+    
+</script>
+</html>
