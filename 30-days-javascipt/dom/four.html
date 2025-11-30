@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom learning</title>
+    <style>
+        body {
+            background-color: #212121;
+            color: white;
+
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="lang">
+        <li>golang</li>
+    </ul>
+
+</body>
+<script>
+    function addllang(langname) {
+        const li = document.createElement('li')
+        li.innerHTML = `${langname}`
+        document.querySelector('.lang').appendChild(li)
+
+
+    }
+    addllang("c#")
+
+    function addoptlang(langname) {
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langname))
+        document.querySelector('.lang').appendChild(li)
+    }
+    addoptlang('ruby')
+    addoptlang('c#')
+
+
+    // edit an element 
+    const firstselect = document.querySelector('li:nth-child(3)')
+    // console.log(firstselect);
+    // firstselect.innerHTML = "😡🎶🦕👌💯😘👌😍😒"
+    const ankit = document.createElement('li')
+    ankit.textContent = "notruby"
+    firstselect.replaceWith(ankit)
+
+    //edit another element
+    const lastele = document.querySelector('li:last-child')
+    lastele.outerHTML = "<li>motherboard</li>"
+
+
+    // delete and Element
+
+    const last = document.querySelector('li:last-child')
+    last.remove()
+
+
+
+
+</script>
+
+</html>
