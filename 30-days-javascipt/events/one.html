@@ -7,7 +7,7 @@
     <title>html events</title>
 </head>
 
-<body>
+<body style="background-color: black;">
     <H2>AMAZING IMAGES</H2>
     <div>
         <ul id="images">
@@ -46,25 +46,48 @@
 
 
 
-    owlid.addEventListener('click',function (e){
-        console.log("own click");
-        e.stopPropagation();  // it has to be not alllow to be upper sam eelement has to be part or the next upper element is not run
+    // owlid.addEventListener('click',function (e){
+    //     console.log("own click");
+    //     e.stopPropagation();  // it has to be not alllow to be upper sam eelement has to be part or the next upper element is not run
         
 
-    },false)
-    image.addEventListener('click',function (){
-        console.log("click inside the ul ");
+    // },false)
+    // image.addEventListener('click',function (){
+    //     console.log("click inside the ul ");
         
         
 
-    },false)
+    // },false)
 
-    document.querySelector("#Google").addEventListener('click',function(e){
-        console.log("click google ");
-        e.preventDefault()
-        e.stopPropagation()
+    // document.querySelector("#Google").addEventListener('click',function(e){
+    //     console.log("click google ");
+    //     e.preventDefault()
+    //     e.stopPropagation()
         
+    // })
+
+    // we have assign a task when i click an image to he remove
+    // first we have to a event listner when he clicks he remove it 
+
+    image.addEventListener('click', function(e){
+        // console.log(e)  // when you just check what event it has 
+        // console.log(e.target);  //he gives the information of the target 
+        console.log(e.target.parentNode);  //this return the parentpart of that
+        console.log(e.target.tagName);  //this return the parentpart of that
+        
+
+        if(e.target.tagName ==="IMG"){
+            const removed = e.target.parentNode  // ther we does the li delte to the images is remove 
+        removed.remove()
+
+
+        }
+
+        
+
+
     })
+
 
 
 
