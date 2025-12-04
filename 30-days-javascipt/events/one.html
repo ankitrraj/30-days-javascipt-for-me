@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html events</title>
+</head>
+
+<body>
+    <H2>AMAZING IMAGES</H2>
+    <div>
+        <ul id="images">
+            <li><img width="200px" id="photoshop"
+                    src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress& cs=tinysrgb&w=1600&lazy=load"
+                    alt="photoshop"></li>
+            <li><img width="200px" id="japān"
+                    src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress& cs=tinysrgb&w=1600&lazy=load"
+                    alt=""></li>
+
+
+            <li><img width="200px" id="river"
+                    src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress& cs=tinysrgb&w=1600&lazy=load"
+                    alt=""></li>
+
+            <li><img width="200px" id="owl"
+                    src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cc=tinysrgb&w=1600&lazy=load"
+                    alt=""></li>
+
+
+            <li><img width="200px" id="prayer"
+                    src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress& cs=tinysrgb&w=1600&lazy=load"
+                    alt=""></li>
+
+            <li><a href="https://www.google.com/" id="Google" >Google</a></li>
+        </ul>
+    </div>
+
+</body>
+<script>
+    const owlid = document.querySelector('#owl')
+    const image = document.querySelector('#images')
+    // owlid.onclick = function () {
+    //     alert("owl click")
+    // }
+
+
+
+    owlid.addEventListener('click',function (e){
+        console.log("own click");
+        e.stopPropagation();  // it has to be not alllow to be upper sam eelement has to be part or the next upper element is not run
+        
+
+    },false)
+    image.addEventListener('click',function (){
+        console.log("click inside the ul ");
+        
+        
+
+    },false)
+
+    document.querySelector("#Google").addEventListener('click',function(e){
+        console.log("click google ");
+        e.preventDefault()
+        e.stopPropagation()
+        
+    })
+
+
+
+</script>
+
+</html>
