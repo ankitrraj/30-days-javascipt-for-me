@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>bol bhai kaisa hia</h1>
+    <button class="start">start</button>
+    <button class="stop">stop</button>
+    
+</body>
+<script>
+    const colorchnaged =function (){
+        const haxcode = "0123456789ABCDEF"
+        let COLOR="#";
+        for (let index = 0; index < 6; index++) {
+            COLOR += haxcode[Math.floor(Math.random()*16)]
+            
+            
+        }
+        return COLOR
+    }
+    console.log(colorchnaged());
+    // console.log(setInterval(colorchnaged()));
+    
+
+
+    let interval;
+
+    const sher =function changecolor(){
+        interval = setInterval(chnagebgcolor,1000)
+    }
+
+    function chnagebgcolor(){
+         const checkcolorcode= document.body.style.backgroundColor = colorchnaged()
+         console.log(checkcolorcode);
+         
+
+    }
+
+    const sher1=function stopchangeCOlor(){
+        clearInterval(interval)
+
+    }
+
+    document.querySelector(".start").addEventListener("click",sher)
+
+
+    document.querySelector(".stop").addEventListener("click",sher1)
+    
+
+
+</script>
+</html>
