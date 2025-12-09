@@ -19,18 +19,29 @@
     const startbtn = document.querySelector(".one")
     const stopbtn = document.querySelector(".stop")
 
+    let inte0rvalid;
+
+    const sher =function start(){
+        inte0rvalid = setInterval(function(){
+            console.log("ankit");
+            
+        },1000)
+    }
+
+    const stop =function cancel(){
+        clearInterval(inte0rvalid)
+
+    }
+
+
+
+     startbtn.addEventListener("click",sher)
+
+    stopbtn.addEventListener("click",stop)
+   
+
+
     
-
-    // setInterval(startref,1000)
-
-
-    // const refofstart = 
-    // const startref = startbtn.addEventListener("click",setInterval(function(e){
-        
-    //     // E.preventdefault()
-    //     console.log("ankit");
-        
-    // },1000))
 
     
 

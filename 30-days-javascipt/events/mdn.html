@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .go {
+            color: green;
+        }
+
+        .stop {
+            color: red;
+        }
+    </style>
+</head>
+
+<div id="my_box">
+    <h3>Hello World</h3>
+</div>
+<button id="start">Start</button>
+<button id="stop">Stop</button>
+
+
+
+<body>
+    <script>
+        // variable to store our intervalID
+        let intervalId;
+
+        function changeColor() {
+            // check if an interval has already been set up
+            intervalId ??= setInterval(flashText, 100);
+        }
+
+        function flashText() {
+            console.log("ankit");
+            
+        }
+
+        function stopTextColor() {
+            clearInterval(intervalId);
+            // release our intervalId from the variable
+            intervalId = null;
+        }
+
+        document.getElementById("start").addEventListener("click", changeColor);
+        document.getElementById("stop").addEventListener("click", stopTextColor);
+    </script>
+</body>
+
+</html>
