@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>set timout </title>
+</head>
+<body>
+
+    <h1>welcome to ankit rajs</h1>
+    <button id="btn">stop</button>
+
+
+
+
+    <script>
+        const ankit =function rohit(){
+            console.log("ankit")
+        }
+        const ref= setTimeout(ankit,3000)
+
+        document.querySelector("#btn").addEventListener("click",function sher(){
+            console.log("stopped");
+            clearInterval(ref)
+            
+
+
+
+        }
+
+
+
+
+
+
+        
+        )
+    
+    </script>
+    
+</body>
+
+</html>
