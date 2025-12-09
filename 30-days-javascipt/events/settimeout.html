@@ -7,7 +7,7 @@
 </head>
 <body>
 
-    <h1>welcome to ankit rajs</h1>
+    <h1 id="change">welcome to ankit rajs</h1>
     <button id="btn">stop</button>
 
 
@@ -18,8 +18,11 @@
             console.log("ankit")
         }
         const ref= setTimeout(ankit,3000)
+        const sherr = document.querySelector("#change")
 
         document.querySelector("#btn").addEventListener("click",function sher(){
+            
+
             console.log("stopped");
             clearInterval(ref)
             
