@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><h1>helooooooooooooooooooooo</h1>
+    <!-- <img src="https://avatars.githubusercontent.com/u/188945277?v=4" alt=""> -->
+    
+</body>
+<script>
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+    const requesturl = 'https://api.github.com/users/ankitrraj'
+    const xhr = new XMLHttpRequest()
+    xhr.open("GET",requesturl)
+     const  values = xhr.onreadystatechange =function (){
+        console.log(xhr.readyState);
+        
+        
+        if(xhr.readyState === 4){
+            const data = JSON.parse(this.responseText)
+            console.log(data.avatar_url
+);
+            console.log(data.followers);
+            
+            
+            
+            
+        }
+        // return data.followers
+        
+    }
+    xhr.send()
+
+    
+    // console.log(data.followers);
+    // console.log(values());
+    // acard.innerHTML = `my followers ${values()}:`
+    // console.log(xhr);
+    
+    
+
+
+
+</script>
+</html>
