@@ -12,6 +12,7 @@ const my_obj = {
         console.log(`hey how arr you`);
         console.log(`hey how arr you ${this.username}`);
         console.log(this);
+        // current excecution context
     }
 }
 console.log(my_obj.useremail);
